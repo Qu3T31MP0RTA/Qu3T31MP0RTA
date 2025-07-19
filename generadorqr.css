@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+.fancy-file {
+    display: none;
+}
+
+.fancy-file+label {
+    display: flex;
+    flex: 1;
+}
+
+.fancy-file_fancy-file-name,
+.fancy-file_fancy-file-button {
+    padding: 5px 10px;
+}
+
+.fancy-file_fancy-file-name {
+    background: #eee;
+    border: 1px solid #cacaca;
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+    max-height: 23px;
+    padding-left: 33px;
+
+}
+
+.fancy-file_fancy-file-name span {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    display: block;
+}
+
+
+.fancy-file_fancy-file-button {
+    background: #5bc0de url(folder_open_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png) 4px center/25px no-repeat;
+    border: 1px solid #5bc0de;
+    max-height: 23px;
+    color: white;
+    white-space: nowrap;
+    border-radius: 0 4px 4px 0;
+    padding-left: 33px;
+}
+
+.contenedor {
+    width: 400px;
+    height: 95vh;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form {
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Titulo {
+    font-size: 24px;
+    background: white;
+    color: black;
+}
+
+.text-imput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px 1px solid #fff2;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: o 1px 12px rgba(0, 0, 0, .1);
+    transition: all .3 linear;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.Descargar-Qr {
+    display: none;
+}
+
+.btnQr1 {
+    display: none;
+}
+
+video,
+canvas {
+    width: 100%;
+    max-width: 400px;
+
+}
+
+#canvas {
+    display: none;
+}
+
+@media(max-width:900px) {
+    .contenedor {
+        width: 100%;
+    }
+}
+
+.Qr {
+    background-color: black;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+#esconder {
+    display: none;
+}
+
+#esconder2 {
+    display: none;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: aquamarine;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    height: 95vh;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(250, 251, 255);
+    box-shadow: -1px -1px 20px #fff2;
+}
+
+.con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+#opcion1:checked~.main #con1 {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+
+#opcion2:checked~.main #con2 {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+
+.contenedor1 {
+    display: none;
+}

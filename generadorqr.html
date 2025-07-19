@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="generadorqr.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr</title>
+</head>
+
+<body>
+    <input type="radio" name="selector" id="opcion1" checked>
+    <input type="radio" name="selector" id="opcion2">
+    <label class="boton" for="opcion1" id="esconder">info 1</label>
+    <label class="boton" for="opcion2" id="esconder2">info 2</label>
+    <div class="main">
+        <div id="con1" class="con">
+            <div class="contenedor">
+                <form>
+                    <h2 class="Titulo">Generador QR</h2>
+                    <p class="aviso"></p>
+                    <input type="text" class="text-imput" placeholder="ingrese texto para generar un QR">
+                    <button class="btnQr">Generar QR</button>
+                    <div class="QR"></div>
+                    <button class="Descargar-Qr">Descargar QR</button>
+                    <button class="btnQr1">Borrar QR</button>
+                </form>
+                <label for="opcion2" class="boton">Lector Qr</label>
+            </div>
+        </div>
+        <div class="con" id="con2">
+            <div class="contenedor">
+                <form>
+                    <h2>Lector QR</h2>
+                    <video id="video" autoplay></video>
+                    <canvas id="canvas"></canvas>
+                    <p id="output"></p>
+                    <button id="acceder">Escanear</button>
+                    <input type="file" class="fancy-file" id="fileInput" accept="image/*">
+                    <label for="fileInput">
+                        <span class="fancy-file_fancy-file-name"><span>Nombre Img</span></span>
+                        <span class="fancy-file_fancy-file-button">Img Qr</span>
+                    </label>
+                </form>
+            </div>
+            <label for="opcion1" class="boton">Generador Qr</label>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+    <script src="generador qr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+
+</body>
+
+</html>
