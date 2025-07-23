@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador y Lector QR</title>
+
+    <!-- Fuentes e íconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=sunny" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bedtime" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="generadorqr.css">
+</head>
+<body>
+    <!-- Selectores de vistas -->
+    <input type="radio" name="selector" id="opcion1" checked>
+    <input type="radio" name="selector" id="opcion2">
+    <label class="boton" for="opcion1" id="esconder">Info 1</label>
+    <label class="boton" for="opcion2" id="esconder2">Info 2</label>
+
+    <!-- Contenedor principal -->
+    <div class="main">
+        <!-- Switch modo oscuro -->
+        <input type="checkbox" class="toggle" id="toggle">
+        <div class="contenedorQr">
+            
+            <!-- Barra superior con switch -->
+            <div class="contenedorQr1">
+                <div class="contener">
+                    <label class="label1" for="toggle">
+                        <div class="circle">
+                            <span id="sunny" class="material-symbols-outlined">sunny</span>
+                            <span id="moon" class="material-symbols-outlined">bedtime</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Sección 1: Generador QR -->
+            <div id="con1" class="con">
+                <div class="contenedor">
+                    <form>
+                        <h2 class="Titulo">Generador QR</h2>
+                        <p class="aviso"></p>
+                        <input type="text" class="text-imput" placeholder="Ingrese texto para generar un QR">
+                        <button class="btnQr">Generar QR</button>
+                        <div class="QR"></div>
+                        <div class="butt">
+                            <button class="Descargar-Qr">Descargar QR</button>
+                            <button class="btnQr1">Borrar QR</button>
+                        </div>
+                    </form>
+                    <label for="opcion2" id="boton" class="boton">Lector QR</label>
+                </div>
+            </div>
+
+            <!-- Sección 2: Lector QR -->
+            <div id="con2" class="con">
+                <div class="contenedor">
+                    <form>
+                        <h2>Lector QR</h2>
+                        <video id="video" autoplay></video>
+                        <canvas id="canvas"></canvas>
+                        <p id="output"></p>
+                        <button id="acceder">Escanear</button>
+
+                        <!-- Input de archivo -->
+                        <input type="file" class="fancy-file" id="fileInput" accept="image/*">
+                        <label for="fileInput">
+                            <span class="fancy-file_fancy-file-name"><span>Nombre Img</span></span>
+                            <span class="fancy-file_fancy-file-button">Img QR</span>
+                        </label>
+                    </form>
+                    <label for="opcion1" class="boton" id="boton">Generador QR</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+    <script src="generador qr.js"></script>
+</body>
+</html>
