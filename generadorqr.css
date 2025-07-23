@@ -92,7 +92,7 @@ input[type="radio"],
 
 .contenedor {
     width: 400px;
-    height: 580px auto;
+    height: 500px auto;
     border-radius: 10px;
     transition: 0.5s;
 }
