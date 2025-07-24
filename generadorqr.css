@@ -58,7 +58,7 @@ input[type="radio"],
 ==================== */
 .main {
     width: 100%;
-    height: 720px auto;
+    height: 720px;
     background-color: #2c2c2f;
     box-shadow: -1px -1px 20px #fff2;
     margin: 0%;
@@ -234,8 +234,7 @@ button:hover,
 #toggle[type=checkbox]:checked+.contenedorQr .contenedorQr1,
 #toggle[type=checkbox]:checked+.contenedorQr form,
 #toggle[type=checkbox]:checked+.contenedorQr .con,
-#toggle[type=checkbox]:checked+.contenedorQr .contener,
-#toggle[type=checkbox]:checked+.main {
+#toggle[type=checkbox]:checked+.contenedorQr .contener {
     background: #2c2c2f;
 }
 
@@ -385,6 +384,6 @@ canvas {
     video,
     canvas {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
     }
 }
