@@ -313,8 +313,8 @@ button:hover,
 ==================== */
 video,
 canvas {
-    width: 100%;
-    max-width: 400px;
+    width: 50%;
+    max-width: 200px;
 }
 
 .Qr {
